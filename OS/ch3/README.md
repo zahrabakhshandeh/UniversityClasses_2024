@@ -61,10 +61,4 @@ This guide outlines various commands to view and manage process information on L
   - `lsof`: Lists open files by all processes.
   - `lsof -p <PID>`: Lists files opened by a specific process.
 
-### I/O Usage
-
-- **Monitoring Tools:**
-  - `iotop`: Monitors I/O usage (requires installation and root privileges).
-  - `atop`: Provides an overview of various metrics, including I/O (also requires installation).
-
-Please replace `<PID>`, `<nice_value>`, `<new_nice_value>`, and `<command>` with appropriate values for your specific use case.
+Please replace `<PID>`, and `<command>` with appropriate values for your specific use case.
