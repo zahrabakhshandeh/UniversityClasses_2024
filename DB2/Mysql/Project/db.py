@@ -1,15 +1,6 @@
+from posts import *
 import mysql.connector
-class Posts:
-    def __init__(self, id_, content1, title=None, category=None):
-        self.id_ = id_
-        self.content = content1
-        self.title = title
-        self.category = category
-
-    def __str__(self):
-        data = f"name:{self.title}, content:{self.content}"
-        return data
-
+import json
 class DB:
     def __init__(self, user, password, host, datbase):
         self.user = user
@@ -28,7 +19,8 @@ class DB:
 
     def execute_query(self, query, data=None, fetch=False):
         try:
-            self.connect = self.connection()
+            self.connection()
+            print(self.connect)
             mycursor = self.connect.cursor()
             mycursor.execute(query, data)
         except Exception as e:
@@ -64,15 +56,33 @@ class DB:
         data = (data_column, id_p)
         self.execute_query(sql, data)
 
+    def load_data_from_json(self, filename="posts.json"):
+        try:
+            with open(filename, "r", encoding='UTF-8') as file:
+                data = json.load(file)
+        except Exception as e:
+            print(e)
+            return
+        for post in data:
+            post = Posts(post.get('id'),post.get('content'),
+                post.get('title'),  post.get('category'))
+            self.add_data(post)
+
+    def save_data_to_json(self, filename="result.json"):
+        data = self.list_posts()
+        all_posts = []
+        for post in data:
+            post = Posts(*post)
+            all_posts.append(post.to_dict())  
+        with open(filename, "w") as file:
+            json.dump(all_posts, file, indent=4)
 
 if __name__ == "__main__":
     obj1 = DB("root","pass","localhost","DBblog")
     post = Posts(1000, "content of new post", "title", "python")
-    obj1.add_data(post)
-    #obj1.remove_data(1000)
-    print(obj1.list_posts())
-    obj1.update_data(1000, "title1000", "content")
-
-
-
-
+    #obj1.add_data(post)
+    obj1.remove_data(1000)
+    #print(obj1.list_posts())
+    #obj1.update_data(1000, "title1000", "content")
+    obj1.load_data_from_json()
+    obj1.save_data_to_json()

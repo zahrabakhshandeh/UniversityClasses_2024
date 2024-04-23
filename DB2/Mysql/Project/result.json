@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "content": "CONTENT1",
+        "title": null,
+        "category": "C1"
+    },
+    {
+        "id": 2,
+        "content": "c3",
+        "title": null,
+        "category": "python"
+    },
+    {
+        "id": 3000,
+        "content": "t1",
+        "title": "content of first post",
+        "category": "c1"
+    },
+    {
+        "id": 3001,
+        "content": "t2",
+        "title": "content of second post",
+        "category": "c1"
+    },
+    {
+        "id": 3002,
+        "content": "t3",
+        "title": "content of thrid post",
+        "category": "c3"
+    },
+    {
+        "id": 4000,
+        "content": "t1",
+        "title": "content of first post",
+        "category": "c1"
+    },
+    {
+        "id": 5000,
+        "content": "t1",
+        "title": "content of first post",
+        "category": "c1"
+    },
+    {
+        "id": 5001,
+        "content": "t2",
+        "title": "content of second post",
+        "category": null
+    },
+    {
+        "id": 5002,
+        "content": "t3",
+        "title": "content of thrid post",
+        "category": "c3"
+    }
+]
