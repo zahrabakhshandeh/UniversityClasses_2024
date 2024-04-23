@@ -1,0 +1,19 @@
+[
+	{
+		"id":3000,
+		"title":"t1",
+		"content": "content of first post",
+		"category":"c1"
+	},
+	{
+		"id":3001,
+		"title":"t2",
+		"content": "content of second post"
+	},
+	{
+		"id":3002,
+		"title":"t3",
+		"content": "content of thrid post",
+		"category":"c3"
+	}
+]
