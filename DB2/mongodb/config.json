@@ -1,0 +1,6 @@
+{
+    "connection": "mongodb://localhost:27017/",
+    "db_name": "blog",
+    "users_collection": "users",
+    "posts_collection": "posts" 
+}
