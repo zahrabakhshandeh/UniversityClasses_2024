@@ -1,0 +1,6 @@
+{
+    "connection": "mongodb://localhost:27017/",
+    "db_name": "library",
+    "books_collection": "books",
+    "borrowers_collection": "borrowers"
+}
