@@ -1,0 +1,11 @@
+image_path,title,tags,description,category,photographer_code,photographer_name,photographer_email
+/path/to/image1.jpg,Sunset at the Beach,sunset,A beautiful sunset at the beach with golden hues lighting up the sky and reflecting on the water.,travel,P001,Ali Rezaei,ali.rezaei@example.com
+/path/to/image2.jpg,Mountain Range,hiking,"A stunning mountain range, perfect for hiking enthusiasts looking for breathtaking views.",nature,P002,Sara Mohammadi,sara.mohammadi@example.com
+/path/to/image3.jpg,City Lights,night,The city comes alive at night with vibrant lights and a bustling atmosphere.,urban,P003,Hossein Karimi,hossein.karimi@example.com
+/path/to/image4.jpg,Rainforest Waterfall,waterfall,A serene rainforest waterfall surrounded by lush greenery and exotic wildlife.,nature,P002,Sara Mohammadi,sara.mohammadi@example.com
+/path/to/image5.jpg,Desert Dunes,desert,Majestic desert dunes with rippling sands stretching as far as the eye can see.,travel,P001,Ali Rezaei,ali.rezaei@example.com
+/path/to/image6.jpg,Ocean Waves,ocean,"The calming effect of ocean waves crashing against the shore, creating a soothing symphony.",nature,P004,Maryam Ahmadi,maryam.ahmadi@example.com
+/path/to/image7.jpg,Forest Trail,forest,A tranquil forest trail perfect for a peaceful walk amidst nature's beauty.,nature,P005,Reza Jafari,reza.jafari@example.com
+/path/to/image8.jpg,City Skyline,city,"The magnificence of the city skyline, capturing the essence of urban life.",urban,P003,Hossein Karimi,hossein.karimi@example.com
+/path/to/image9.jpg,Winter Wonderland,winter,Experiencing the magic of winter wonderland with snow-covered landscapes and a cozy atmosphere.,seasonal,P006,Fatemeh Ebrahimi,fatemeh.ebrahimi@example.com
+/path/to/image10.jpg,Autumn Leaves,autumn,"The beauty of autumn leaves, showcasing a palette of vibrant colors as they fall.",seasonal,P007,Mahdi Ghasemi,mahdi.ghasemi@example.com
